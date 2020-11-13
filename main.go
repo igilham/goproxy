@@ -132,10 +132,10 @@ func resetCommand() {
 func main() {
 	flag.Parse()
 	if flag.NArg() < 1 {
-		log.Fatal("proxy: Not enough arguments")
+		log.Fatal("not enough arguments")
 	}
 	if flag.NArg() > 1 {
-		log.Fatal("proxy: Too many arguments")
+		log.Fatal("too many arguments")
 	}
 
 	cmd := flag.Arg(0)
@@ -149,6 +149,6 @@ func main() {
 	case "reset":
 		resetCommand()
 	default:
-		log.Fatal("proxy: bad argument")
+		log.Fatal("invalid command")
 	}
 }
