@@ -2,6 +2,8 @@
 
 This is a simple tool for toggling company proxy settings on and off in the shell environment on MacOS.
 
+I previously made a version of [this tool in python](https://gist.github.com/igilham/f2fb41190258f385eebe48a6c46421e5).
+
 Use with `eval` in the shell to make changes to your configuration, e.g.
 `eval $(goproxy on)`.
 
