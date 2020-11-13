@@ -29,8 +29,10 @@ proxy_on() {
 proxy_off() {
   eval "$(proxy off)"
 }
-
+proxy_reset() {
+  eval "$(proxy reset)"
+}
 # various setup actions...
 
-proxy reset
+proxy_reset
 ```
